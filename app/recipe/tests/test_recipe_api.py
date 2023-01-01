@@ -108,7 +108,7 @@ class PrivateRecipeAPITests(TestCase):
         payload = {
             'title': 'Sample recipe',
             'time_minutes': 30,
-            'price': Decimal(5.99),
+            'price': Decimal('5.99'),
         }
         res = self.client.post(RECIPES_URL, payload)
 
